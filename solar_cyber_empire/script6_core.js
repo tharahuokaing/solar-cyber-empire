@@ -8,8 +8,8 @@ function unlockSystem() {
     // បង្កើត Interface សួរពាក្យសម្ងាត់បែប Cyber
     const accessCode = prompt("🔐 [SECURITY ALERT] សូមបញ្ជាក់អត្តសញ្ញាណអធិរាជ (Access Code):");
     
-    // លក្ខខណ្ឌសម្ងាត់៖ ត្រូវវាយឈ្មោះ "Huakang Dara" (មិនប្រកាន់អក្សរតូចធំ)
-    if (accessCode && accessCode.toLowerCase() === "huakang dara") {
+    // លក្ខខណ្ឌសម្ងាត់៖ ត្រូវវាយឈ្មោះ " " (មិនប្រកាន់អក្សរតូចធំ)
+    if (accessCode && accessCode.toLowerCase() === "huokaingthara") {
         playSound('scan');
         document.body.style.filter = "none"; // បើកពន្លឺអេក្រង់
         document.body.style.pointerEvents = "auto"; // អនុញ្ញាតឱ្យចុច
