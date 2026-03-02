@@ -6,7 +6,7 @@
 // ១. ប្រព័ន្ធ Identity Check (Gatekeeper Protocol)
 function unlockSystem() {
     // បង្កើត Interface សួរពាក្យសម្ងាត់បែប Cyber
-    const accessCode = prompt("🔐 [SECURITY ALERT] សូមបញ្ជាក់អត្តសញ្ញាណអធិរាជ (Access Code):");
+    const accessCode = prompt("🔐 [SECURITY ALERT] សូមបញ្ជាក់អត្តសញ្ញាណអធិរាជសាយប័រ (Access Code):");
     
     // លក្ខខណ្ឌសម្ងាត់៖ ត្រូវវាយឈ្មោះ " " (មិនប្រកាន់អក្សរតូចធំ)
     if (accessCode && accessCode.toLowerCase() === "huokaingthara") {
@@ -33,7 +33,7 @@ function initializeEmpire() {
             terminal.innerHTML += `<p style="color: #00f2ff">> [CORE] ថាមពលគ្រីស្តាល់បុរាណត្រូវបានសមកាលកម្ម...</p>`;
             terminal.innerHTML += `<p style="color: #00ff88; font-weight: bold;">> [WELCOME] ស្វាគមន៍ការត្រឡប់មកវិញ នៃលោកម្ចាស់ ហួកាំង ថារ៉ា!</p>`;
             
-            status.innerText = "ប្រព័ន្ធអធិរាជ៖ ONLINE";
+            status.innerText = "ប្រព័ន្ធអធិរាជសាយប័រ៖ ONLINE";
             status.style.background = "#00ff88";
             status.style.color = "#000";
             status.style.boxShadow = "0 0 20px #00ff88";
@@ -63,7 +63,7 @@ function initMatrixRain() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789កខគឃងចឆជឈញដឋឌឍណ";
+    const chars = "01111111 11111111 11111111 11111111 7FFFFFFF";
     const fontSize = 16;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
@@ -88,7 +88,7 @@ function initMatrixRain() {
     setInterval(draw, 50);
 }
 
-// ៥. មុខងារចារឹកព្រះរាជសារ (Imperial Archive)
+// ៥. មុខងារចារឹកព្រះអធិរាជសារ (Imperial Archive)
 function exportReport() {
     playSound('scan');
     const terminal = document.getElementById('main-terminal');
@@ -98,7 +98,7 @@ function exportReport() {
         terminal.style.boxShadow = "0 0 70px #ffd700";
         setTimeout(() => { terminal.style.boxShadow = "none"; }, 500);
 
-        alert("📜 [ARCHIVE] ព្រះរាជសារសវនកម្មត្រូវបានចារឹកក្នុងប្រវត្តិសាស្ត្ររួចរាល់!");
+        alert("📜 [ARCHIVE] ព្រះធិរាជសារសវនកម្មត្រូវបានចារឹកក្នុងប្រវត្តិសាស្ត្ររួចរាល់!");
         console.log("Imperial Audit Secured by Lord Huakang Dara.");
     } else {
         alert("⚠️ [EMPTY] គ្មានទិន្នន័យសម្រាប់ចារឹកឡើយ! សូមបញ្ជាភពនានាមុនសិន!");
@@ -138,3 +138,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
