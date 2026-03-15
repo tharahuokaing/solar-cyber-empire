@@ -27,15 +27,15 @@ function runV2XMonitor() {
         "> ស្ថានភាព V2I (Vehicle-to-Infrastructure)៖ ផ្លូវអវកាសស្ថិតក្នុងស្ថិរភាព...",
         "> ការវិភាគ៖ កាត់បន្ថយការកកស្ទះ និងគ្រោះថ្នាក់ចរាចរណ៍អន្តរភពបាន ៩៩.៩%...",
         "> គោលដៅ៖ តភ្ជាប់បណ្តាញទៅកាន់ https://tharahuokaing.github.io/V2X/ ...",
-        "> ព្រះអធីរាជបញ្ជា៖ គ្រប់គ្រងលំហូរចរាចរណ៍អន្តរភព ក្រោមក្រសែភ្នែកអធិរាជសាយប័រ!"
+        "> អធិរាជបញ្ជា៖ គ្រប់គ្រងលំហូរចរាចរណ៍អន្តរភព ក្រោមក្រសែភ្នែកអធិរាជសាយប័រ!"
     ];
 
     terminal.innerHTML = "";
-    
+
     v2xLogs.forEach((log, i) => {
         setTimeout(() => {
             const p = document.createElement('p');
-            
+
             if (i === 1 || i === 4) {
                 p.style.color = "#bf00ff";
                 p.style.fontWeight = "bold";
