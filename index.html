@@ -197,26 +197,6 @@
     <script src="solar_cyber_empire/script8_v2x.js"></script>
     <script src="solar_cyber_empire/ultra_secure_mode.js"></script>
     <script src="solar_cyber_empire/ghost_protocol.js"></script>
-    
-        // បញ្ឆេះតន្ត្រីដោយស្វ័យប្រវត្តិក្រោយពេល Unlock (ហៅចេញពី script6_core.js)
-        function playImperialMusic() {
-            const music = document.getElementById('bg-music');
-            if (music) {
-                music.volume = 0; // ចាប់ផ្តើមពីសំឡេងតិចបំផុត
-                music.play().catch(e => console.warn("តន្ត្រីរង់ចាំការបញ្ជាក់ព្រះហស្ថ..."));
-                
-                // បន្ថែមសំឡេងបន្តិចម្តងៗ (Fade-in)
-                let vol = 0;
-                const fadeIn = setInterval(() => {
-                    if (vol < 0.4) {
-                        vol += 0.05;
-                        music.volume = vol;
-                    } else {
-                        clearInterval(fadeIn);
-                    }
-                }, 200);
-            }
-        }
     </script>
 </body>
 </html>
