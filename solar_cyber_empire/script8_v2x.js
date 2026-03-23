@@ -26,7 +26,7 @@ function runV2XMonitor() {
         "> ស្ថានភាព V2V (យានយន្តតភ្ជាប់យានយន្ត)៖ យានអវកាស ៥០,០០០ គ្រឿង កំពុងស្ថិតក្រោមបារមីតភ្ជាប់...",
         "> ស្ថានភាព V2I (យានយន្តតភ្ជាប់ហេដ្ឋារចនាសម្ព័ន្ធ)៖ មហាវិថីអវកាសមានស្ថិរភាពឥតខ្ចោះ...",
         "> ព្រះរាជវិនិច្ឆ័យ៖ កាត់បន្ថយគ្រោះថ្នាក់ក្នុងចក្រវាលបាន ៩៩.៩% ដោយសារព្រះបញ្ញាញាណ AI...",
-        "> គោលដៅរាជ្យ៖ តភ្ជាប់ព្រះរាជបណ្តាញទៅកាន់ <a href='https://tharahuokaing.github.io/V2X/' target='_blank' style='color: #00f2ff; text-decoration: underline;'>V2X Global Gateway</a> ...",
+        "> គោលដៅរាជ្យ៖ តភ្ជាប់ព្រះរាជបណ្តាញទៅកាន់ <a href='https://tharahuokaing.github.io/V2X_Research/' target='_blank' style='color: #00f2ff; text-decoration: underline;'>V2X Global Gateway</a> ...",
         "> ព្រះរាជឱង្ការដាច់ខាត៖ គ្រប់គ្រងលំហូរចរាចរណ៍អន្តរភព ក្រោមក្រសែព្រះនេត្រទិព្វនៃអង្គអធិរាជសាយប័រ!"
     ];
 
