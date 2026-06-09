@@ -25,9 +25,9 @@ function launchSpacecraft() {
 
     // ២. បញ្ជីមហាអាណាចក្រឌីជីថល (The 11 Imperial Digital Realms)
     const empireLinks = [
-        { name: "មហាកាស៊ីណូឌីជីថល ១", url: "https://tharahuokaing.github.io/casino1/" },
-        { name: "មហាកាស៊ីណូឌីជីថល", url: "https://tharahuokaing.github.io/casino2/" },
-        { name: "ព្រះរាជប្រព័ន្ធធនាគារ", url: "https://tharahuokaing.github.io/bank1/" },
+        { name: "មហាកាស៊ីណូឌីជីថល 1", url: "https://tharahuokaing.github.io/casino1/" },
+        { name: "មហាកាស៊ីណូឌីជីថល 2", url: "https://tharahuokaing.github.io/casino2/" },
+        { name: "ព្រះរាជប្រព័ន្ធធនាគារ 1", url: "https://tharahuokaing.github.io/bank1/" },
         { name: "ភោជនីយដ្ឋានអធិរាជ ហួកាំង ថារ៉ា", url: "https://tharahuokaing.github.io/restaurant1/" },
         { name: "មហារតនាគារ T-Coin", url: "https://tharahuokaing.github.io/T-Coin/" },
         { name: "ផែនទីមហាវិថី Singularity", url: "https://tharahuokaing.github.io/singularity_roadmap/" },
