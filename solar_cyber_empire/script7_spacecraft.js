@@ -32,8 +32,6 @@ function launchSpacecraft() {
         { name: "មហារតនាគារ T-Coin", url: "https://tharahuokaing.github.io/T-Coin/" },
         { name: "ផែនទីមហាវិថី Singularity", url: "https://tharahuokaing.github.io/singularity_roadmap/" },
         { name: "បញ្ញាសិប្បនិម្មិតអធិរាជ (AI)", url: "https://tharahuokaing.github.io/ai/" },
-        { name: "មជ្ឈមណ្ឌលស្រាវជ្រាវបច្ចេកវិទ្យា", url: "https://tharahuokaing.github.io/technology/" },
-        { name: "មហាសាលស្រាវជ្រាវទំនើប ១", url: "https://tharahuokaing.github.io/Modern_Technology_Research_1/" },
         { name: "មជ្ឈមណ្ឌលសង្គ្រោះកាលវេលា Y2K38", url: "https://tharahuokaing.github.io/Y2K38_Problem/" },
         { name: "មហាប្រព័ន្ធយានយន្ត V2X", url: "https://tharahuokaing.github.io/V2X/" },
         { name: "មន្ទីរពិសោធន៍យុទ្ធសាស្ត្រ V2X", url: "https://tharahuokaing.github.io/V2X_Research/" },
