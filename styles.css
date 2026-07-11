@@ -97,6 +97,23 @@ body::before {
     to { opacity: 1; transform: translateX(0); }
 }
 
+/* --- Typing effect --- */
+.typing {
+    border-right: 2px solid var(--gold);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 /* --- ៥. ប៊ូតុងរាជវង្ស (Royal Buttons) --- */
 .control-panel {
     display: grid;
@@ -127,6 +144,21 @@ body::before {
     transform: scale(0.95);
 }
 
+/* --- Glitch effect --- */
+.glitch {
+    position: relative;
+    color: var(--royal-blue);
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 0 var(--imperial-red), -2px 0 var(--security-green); }
+    20% { text-shadow: -2px 0 var(--imperial-red), 2px 0 var(--security-green); }
+    40% { text-shadow: 2px 0 var(--imperial-red), -2px 0 var(--security-green); }
+    60% { text-shadow: -2px 0 var(--imperial-red), 2px 0 var(--security-green); }
+    100% { text-shadow: 2px 0 var(--imperial-red), -2px 0 var(--security-green); }
+}
+
 /* --- ៦. ប្រព័ន្ធ Hologram នៃយានអវកាស --- */
 #hologram-display {
     position: fixed;
@@ -145,8 +177,14 @@ body::before {
 }
 
 #spacecraft-hologram {
-    opacity: 0.7;
-    filter: drop-shadow(0 0 10px var(--royal-blue)) brightness(1.2);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 15px var(--royal-blue));
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); filter: drop-shadow(0 0 10px var(--royal-blue)); }
+    to { transform: scale(1.05); filter: drop-shadow(0 0 25px var(--gold)); }
 }
 
 /* --- ៧. របាររំកិល (Scrollbar Custom) --- */
@@ -161,6 +199,7 @@ body::before {
     box-shadow: 0 0 10px var(--royal-blue);
 }
 
+/* --- Khmer Matrix Stream --- */
 #khmer-background {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -177,6 +216,7 @@ body::before {
   color: var(--royal-blue);
   text-shadow: 0 0 10px var(--gold);
   animation: fall 5s linear infinite;
+  animation-delay: calc(-5s * var(--i));
 }
 
 @keyframes fall {
