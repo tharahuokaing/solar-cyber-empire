@@ -160,3 +160,25 @@ body::before {
     background: var(--royal-blue);
     box-shadow: 0 0 10px var(--royal-blue);
 }
+
+#khmer-background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.khmer-stream {
+  position: absolute;
+  top: -50px;
+  font-family: 'Noto Sans Khmer', sans-serif;
+  font-size: 18px;
+  color: var(--royal-blue);
+  text-shadow: 0 0 10px var(--gold);
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh); }
+}
