@@ -198,5 +198,54 @@
     <script src="solar_cyber_empire/ultra_secure_mode.js"></script>
     <script src="solar_cyber_empire/ghost_protocol.js"></script>
     </script>
+
+    <script>
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize canvas to full screen
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        // Khmer character set
+        const khmerChars = "កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវសហឡអ".split("");
+
+        const fontSize = 18;
+        const columns = canvas.width / fontSize; 
+        const drops = [];
+
+        // Initialize drops
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function draw() {
+            // Semi-transparent background to fade old characters
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00f2ff"; // Royal blue glow
+            ctx.font = fontSize + "px 'Kantumruy Pro', monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = khmerChars[Math.floor(Math.random() * khmerChars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                // Reset drop randomly after it passes screen
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 50);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            canvas.height = window.innerHeight;
+            canvas.width = window.innerWidth;
+        });
+    </script>
 </body>
 </html>
