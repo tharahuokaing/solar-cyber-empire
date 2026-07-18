@@ -62,7 +62,7 @@ function initMatrixRain() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const chars = "HUOKAINGTHARA01010101帝国"; 
+    const chars = "10101010101010101010"; 
     const fontSize = 16;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
